@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Ini batas dari Reset CSS */
+
+body {
+    font: 16px/28px arial, verdana, sans-serif;
+    background-image: url(gambar/bg1.png);
+    color: rgb(255, 255, 255);
+}
+
+.top-bar {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    background-color: darkred;
+    border-bottom: 7px solid rgb(44, 9, 126)
+}
+
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color: rgb(44, 9, 126);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ig {
+    width: 200px;
+    height: 200px;
+    background-image: url(gambar/ig.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -99999px;
+    position: absolute;
+    top: -18px;
+    right: -19px;
+
+}
+
+.header {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 3px;
+}
+
+.header .judul {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 7px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+.hero {
+    height: 500px;
+    background-image: url(gambar/aan.png);
+    border-top: solid 7px darkred;
+    border-bottom: solid 7px darkred;
+}
+
+.main {
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+}
+.penulis a {
+    color: rgb(245, 174, 20);
+    text-decoration: none;
+}
+
+.main a:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+.main h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.penulis {
+    font-size: 11px;
+    margin-top: -3px;
+    margin-bottom: 30px;
+}
+
+.isiartikel p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    float: right;
+}
+
+
+
+.sidebar p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.sidebar img {
+    float: left;
+    padding-right: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.sidebar h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: white;
+    border-top: solid 7px darkred;
+    padding: 5px;
+}
+
+.footer .copyright {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    height: auto; 
+}
+
+/* Ini adalah clear fix */
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
